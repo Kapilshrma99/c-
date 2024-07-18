@@ -8,10 +8,13 @@ int main(){
         sum+=number%10;
         number=number/10;
     }
-    cout<<"it is "<<(diviOf2and5 % 2==0)<<" by 2"<<endl;
-    cout<<"it is "<<(sum % 3==0)<<" by 3"<<endl;
-    cout<<"it is "<<(diviOf2and5 % 5==0)<<" by 5"<<endl;
-    cout<<"it is "<<(sum % 9==0)<<" by 9"<<endl;
-
+    (diviOf2and5 % 2==0) && 
+    cout<<"it is divisible by 2"<<endl;
+    (sum % 3==0) &&
+    cout<<"it is by divisible 3"<<endl;
+    (diviOf2and5 % 5==0) &&
+    cout<<"it is divisible by 5"<<endl;
+    (sum % 9==0) &&
+    cout<<"it is divisible by 9"<<endl;
     return 0;
 }
