@@ -2,26 +2,18 @@
 #include<iostream>
 #include<vector>
 using namespace std;
-int remove_duplicates(vector<int> &arr){
-    vector<int> arr1;
-    int j=0;
-    arr1.push_back(arr[0]);
-    for(int i=0;i<arr.size()-1;i++){
-        if(arr1[j]!=arr[i]){
-            arr1.push_back(arr[i]);
-            j++;
+int removeDuplicates(vector<int>& nums) {
+        int start=0,curr=1;
+        while(curr<=nums.size()-1){
+            if(nums[start]!=nums[curr])
+                nums[++start]=nums[curr];
+            curr++;
         }
+        return ++start;
     }
-    j=0;
-    for(int i=0;i<arr1.size();i++){
-        arr[i]=arr1[i];
-        j++;
-    }
-    return j;
-}
 int main(){
     vector<int> arr{2,2,2};
-    int j=remove_duplicates(arr);
+    int j=removeDuplicates(arr);
     for(int i=0;i<j;i++){
         cout<<arr[i];
     }
