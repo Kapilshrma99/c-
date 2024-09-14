@@ -15,7 +15,7 @@ int gcd(int a,int b){
     return gcd(a,b-a);
 }
 int main(){
-    int a=60,b=4;
+    int a=34818,b=45632;
     //  int greater = max(a, b);
    cout<< gcd(a,b);
     return 0;
