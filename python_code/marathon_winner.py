@@ -18,7 +18,7 @@ for i in range(n):
     list1.append(b)
 for i in range(t):
     list2.append(list(list(zip(*list1))[i]))
-# print(list2)
+# print(list2) 
 for i in range(1,t,2):
     m=max(list2[i])
     for j in range(len(list2[i])):
